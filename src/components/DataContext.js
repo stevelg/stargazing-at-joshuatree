@@ -21,7 +21,7 @@ export const DataProvider = ({ children }) => {
     };
 
     fetchData();
-  }, []);
+  }, [url]);
 
   return <DataContext.Provider value={data}>{children}</DataContext.Provider>;
 };
