@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/stargazing-at-joshuatree/static/css/main.1c37fa71.css",
-    "main.js": "/stargazing-at-joshuatree/static/js/main.f91ffeca.js",
-    "static/js/453.1ab41923.chunk.js": "/stargazing-at-joshuatree/static/js/453.1ab41923.chunk.js",
+    "main.css": "/stargazing-at-joshuatree/static/css/main.0fd5f5e2.css",
+    "main.js": "/stargazing-at-joshuatree/static/js/main.f857da79.js",
+    "static/js/453.cf1ff69f.chunk.js": "/stargazing-at-joshuatree/static/js/453.cf1ff69f.chunk.js",
     "static/media/background.jpg": "/stargazing-at-joshuatree/static/media/background.14318f895743ffb5ea36.jpg",
     "index.html": "/stargazing-at-joshuatree/index.html",
-    "main.1c37fa71.css.map": "/stargazing-at-joshuatree/static/css/main.1c37fa71.css.map",
-    "main.f91ffeca.js.map": "/stargazing-at-joshuatree/static/js/main.f91ffeca.js.map",
-    "453.1ab41923.chunk.js.map": "/stargazing-at-joshuatree/static/js/453.1ab41923.chunk.js.map"
+    "main.0fd5f5e2.css.map": "/stargazing-at-joshuatree/static/css/main.0fd5f5e2.css.map",
+    "main.f857da79.js.map": "/stargazing-at-joshuatree/static/js/main.f857da79.js.map",
+    "453.cf1ff69f.chunk.js.map": "/stargazing-at-joshuatree/static/js/453.cf1ff69f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c37fa71.css",
-    "static/js/main.f91ffeca.js"
+    "static/css/main.0fd5f5e2.css",
+    "static/js/main.f857da79.js"
   ]
 }
