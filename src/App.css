@@ -45,7 +45,8 @@ main {
 
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 16px 16px 16px 16px;
-  margin-top: -25px;
+  margin-top: 5px;
+  margin-bottom: -55px;
 
   box-shadow: 0px 5px rgba(0,0,0,0.2);
 
@@ -105,36 +106,46 @@ main {
   .condition-container {
     transform: scale(0.9);
   }
-    .visibility-box{
-        transform: scale(0.9);
-      }
+  .visibility-box{
+    transform: scale(0.9);
+  }
+  .date-picker {
+    transform: scale(0.9);
+  }
 }
 
 @media (max-width: 576px) {
   .condition-container {
     transform: scale(0.8);
   }
-            .visibility-box {
-              transform: scale(0.8);
-            }
+  .visibility-box {
+    transform: scale(0.8);
+  }
 }
 
 @media (max-width: 375px) {
   .condition-container {
     transform: scale(0.7);
   }
-            .visibility-box {
-              transform: scale(0.7);
-            }
+  .visibility-box {
+    transform: scale(0.7);
+  }
 }
 
 @media (max-width: 330px) {
   .condition-container {
     transform: scale(0.5);
   }
-            .visibility-box {
-              transform: scale(0.5);
-            }
+  .visibility-box {
+    transform: scale(0.5);
+  }
+}
+
+.date-picker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
 }
 
 .condition-container {

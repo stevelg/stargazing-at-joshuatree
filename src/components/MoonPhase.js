@@ -25,7 +25,7 @@ const MoonPhase = () => {
 
   const moonPhase = data.days[0].moonphase;
   const moonPhaseImage = getMoonPhaseImage(moonPhase);
-  const moonPhasePercentage = moonPhase <= 0.5 ? (moonPhase * 200).toFixed(0) + "% Full Moon" : ((1 - moonPhase) * 200).toFixed(2) + "% Full Moon";
+  const moonPhasePercentage = moonPhase <= 0.5 ? (moonPhase * 200).toFixed(0) + "% Full Moon" : ((1 - moonPhase) * 200).toFixed(0) + "% Full Moon";
   return (
     <div className="moon-phase-img">
       <img src={moonPhaseImage} alt="Moon Phase" />

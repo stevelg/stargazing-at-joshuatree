@@ -3,12 +3,15 @@ import axios from "axios";
 
 const DataContext = createContext();
 
-export const DataProvider = ({ children }) => {
+export const DataProvider = ({ children, selectedDate }) => {
   const [data, setData] = useState(null);
   const latitude = 33.9917; // coordnates change to be implemented
   const longitude = -116.0628;
   const apiKey = "9XRMNTJU2QEAXZ6GXE2LQY962";
-  const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${latitude},${longitude}?unitGroup=us&include=hours&key=${apiKey}&contentType=json`;
+  const formattedDate = selectedDate.toISOString().split("T")[0];
+  const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${latitude},${longitude}/${formattedDate}?unitGroup=us&include=hours&key=${apiKey}&contentType=json`;
+
+  // const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${latitude},${longitude}?unitGroup=us&include=hours&key=${apiKey}&contentType=json`;
 
   useEffect(() => {
     const fetchData = async () => {

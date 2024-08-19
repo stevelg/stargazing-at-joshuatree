@@ -16,7 +16,7 @@ function getAverageCloudCoverageFromSunsetTo23(data) {
 
   // Calculate average cloud coverage
   const totalCloudCoverage = filteredHours.reduce((sum, hour) => sum + hour.cloudcover, 0);
-  const averageCloudCoverage = totalCloudCoverage / filteredHours.length;
+  const averageCloudCoverage = Math.floor(totalCloudCoverage / filteredHours.length);
 
   // Calculate average precipitation
   const totalPrecipitation = filteredHours.reduce((sum, hour) => sum + hour.precip, 0);
