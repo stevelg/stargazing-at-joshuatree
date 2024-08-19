@@ -99,6 +99,44 @@ main {
   text-align: center;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
 }
+
+
+@media (max-width: 768px) {
+  .condition-container {
+    transform: scale(0.9);
+  }
+    .visibility-box{
+        transform: scale(0.9);
+      }
+}
+
+@media (max-width: 576px) {
+  .condition-container {
+    transform: scale(0.8);
+  }
+            .visibility-box {
+              transform: scale(0.8);
+            }
+}
+
+@media (max-width: 375px) {
+  .condition-container {
+    transform: scale(0.7);
+  }
+            .visibility-box {
+              transform: scale(0.7);
+            }
+}
+
+@media (max-width: 330px) {
+  .condition-container {
+    transform: scale(0.5);
+  }
+            .visibility-box {
+              transform: scale(0.5);
+            }
+}
+
 .condition-container {
   display: flex;
   justify-content: center;
