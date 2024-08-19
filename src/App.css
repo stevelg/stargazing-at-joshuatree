@@ -1,42 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./assets/background.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-out;
+}
+
+main {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.75));
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20%;
+  padding: 50px;
+}
+
+.search-box {
+  width: 100%;
+  margin: 0 0 75px;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 16px 16px 16px 16px;
+  margin-top: -25px;
+
+  box-shadow: 0px 5px rgba(0,0,0,0.2);
+
+  color: #313131;
+  font-size: 2-px;
+
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.location-box .location {
+  color: #FFF;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 5px 5px rgba(50, 50, 70, 0.5);
+}
+
+.location-box .date {
+  color: #FFF;
+  font-size: 26px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 5px 5px rgba(50, 50, 70, 0.5);
+}
+
+.visibility-box {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.visibility-box .visibility {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 15px 25px;
+  color: #FFF;
+  font-size: 102px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.visibility-box .visibility .visibility-unit {
+  font-size: 18px;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.condition-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.moon-phase, .cloud-coverage {
+  margin: 0 20px;
+}
+.moon-phase .moon-phase-img {
+  position: relative;
+  display: inline-block;
+  margin: 10px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 5px 5px;
+  color: #FFF;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.moon-phase .moon-phase-img img {
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(8px 15px 15px rgba(0, 0, 0, 0.75));
+  border-radius: 10%;
+  opacity: 0.5;
+  scale: 0.6;
 }
 
-.highlight {
-  background-color: yellow;
+.moon-phase-text {
+  color: #547d8a;
+  font-size: 18px;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.cloud-coverage .cloud-coverage-img {
+    position: relative;
+    display: inline-block;
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 5px 5px;
+    color: #FFF;
+    box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.cloud-coverage .cloud-coverage-img img {
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(8px 15px 15px rgba(0, 0, 0, 0.75));
+  border-radius: 10%;
+  opacity: 0.5;
+  scale: 0.6;
+}
+
+.cloud-coverage-text {
+  color: #547d8a;
+  font-size: 18px;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
 }
