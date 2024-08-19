@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 function RealTimeData({ data }) {
+  const [currentDate, setCurrentDate] = useState("");
+
+  useEffect(() => {
+    const date = new Date();
+    const formattedDate = date.toLocaleDateString();
+    setCurrentDate(formattedDate);
+  }, []);
+
   return (
     <div>
-      <h2>Current Moon Phase</h2>
-      {data.moonPhaseImage && <img src={data.moonPhaseImage} alt="Moon Phase" />}
+      <div>{currentDate}</div>
     </div>
   );
 }

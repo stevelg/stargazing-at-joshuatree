@@ -4,6 +4,7 @@ import { DataProvider } from "./components/DataContext";
 import "./App.css";
 import CloudCoverage from "./components/CloudCoverage";
 import Visibility from "./components/Visibility";
+import RealTimeData from "./components/RealTimeData";
 
 function App() {
   return (
@@ -14,13 +15,15 @@ function App() {
             <input type="text" className="search-bar" placeholder="Enter location..." />
           </div>
           <div className="location-box">
-            <div className="location">Location</div>
-            <div className="date">Date</div>
+            <div className="location">Joshua Tree National Park</div>
+            <div className="date">
+              <RealTimeData />
+            </div>
           </div>
           <div className="visibility-box">
             <div className="visibility">
               <Visibility />
-              <div className="visibility-unit">Visibility</div>
+              <div className="visibility-unit">Stars Visibility</div>
             </div>
           </div>
 
